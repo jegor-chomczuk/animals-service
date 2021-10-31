@@ -33,6 +33,7 @@ public class AnimalController {
         animalService.updateField(id);
     }
 
+    @CrossOrigin(origins = "http://localhost:4200")
     @PostMapping("/adopt")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void adoptPet(@RequestBody AdopterDTO adopterDTO){
